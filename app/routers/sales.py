@@ -8,7 +8,6 @@ from app.builders.invoice_builder import InvoiceBuilder
 
 router = APIRouter(prefix="/sales", tags=["Sales"])
 
-
 #Crear ventas
 @router.post("/", response_model=SaleResponse)
 def create_sale(sale: SaleCreate, db: Session = Depends(get_db)):
