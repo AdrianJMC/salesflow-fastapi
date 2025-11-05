@@ -46,20 +46,19 @@ GESTOR-VENTAS/
 
 ## ⚙️ Configuración del entorno
 
-### 1️⃣ Crear y activar entorno virtual
+##1️⃣ Crear y activar entorno virtual
 
 python -m venv venv
 venv\Scripts\activate    # En Windows
-# o en Linux/Mac:
-# source venv/bin/activate
 
-### 2️⃣ Instalar dependencias
+Linux/Mac:
+source venv/bin/activate
+
+## 2️⃣ Instalar dependencias
 pip install fastapi uvicorn pymysql sqlalchemy python-dotenv
 
-## ⚙️ Configuración del entorno
-
-### Crear tu propio archivo .env
-# Variables de entorno para SalesFlow
+## Crear tu propio archivo .env
+## Variables de entorno para SalesFlow
 DB_HOST=localhost
 DB_PORT=
 DB_USER=
@@ -67,10 +66,10 @@ DB_PASSWORD=
 DB_NAME=salesflow
 
 ## Crear la base de datos y tablas
-### abre tu Mysql y ejecuta:
+Abre tu Mysql y ejecuta:
 Create table salesflow;
 
-### Luego en la terminal del proyecto ejecutar:
+Luego en la terminal del proyecto ejecutar:
 python create_tables.py
 
 ## ▶️ Ejecutar el servidor FastAPI
