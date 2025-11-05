@@ -58,7 +58,7 @@ source venv/bin/activate
 pip install fastapi uvicorn pymysql sqlalchemy python-dotenv
 
 ## Crear tu propio archivo .env
-## Variables de entorno para SalesFlow
+Variables de entorno para SalesFlow:
 DB_HOST=localhost
 DB_PORT=
 DB_USER=
